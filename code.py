@@ -55,7 +55,7 @@ logging.basicConfig(filename="dashboard.log", level=logging.INFO,
 def setup_upstox_client():
     try:
         # Replace with your Upstox access token
-        access_token = "eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIySkNaM1ciLCJqdGkiOiI2ODYzMWJmMjAzNGQyNzZhMDQzMGJiZjkiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc1MTMyNTY4MiwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzUxNDA3MjAwfQ.jX6uoiFqCxI5sHjxGh2hEfa4UKt_Q6bkPC7pYGc5fVs"
+        access_token = "eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIySkNaM1ciLCJqdGkiOiI2OGE1ZDU1N2M1MDFlYjUyMzRhNDI2YTkiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc1NTY5ODUxOSwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzU1NzI3MjAwfQ.t1utIsq_TLB9O-pAdqYqSLafHbC7lZ3AqT78mMH1iAA"
         if not access_token or access_token == "your_upstox_access_token_here":
             raise ValueError("Upstox access token is missing or invalid. Please provide a valid token.")
         configuration = upstox_client.Configuration()
